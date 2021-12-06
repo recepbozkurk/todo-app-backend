@@ -1,0 +1,117 @@
+{
+  "consumer": {
+    "name": "web_server"
+  },
+  "interactions": [
+    {
+      "description": "a GET request to get todos",
+      "request": {
+        "method": "GET",
+        "path": "/todos"
+      },
+      "response": {
+        "body": {
+          "_id": "1",
+          "isComplete": false,
+          "text": "do something"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$._id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.isComplete": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.text": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "a POST request to create a new todo",
+      "request": {
+        "body": {
+          "text": "do something"
+        },
+        "method": "POST",
+        "path": "/todos"
+      },
+      "response": {
+        "body": {
+          "_id": "1",
+          "isComplete": false,
+          "text": "do something"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$._id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.isComplete": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.text": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pactJs": {
+      "opts:port": "1234",
+      "version": "10.0.0-beta.44"
+    },
+    "pactRust": {
+      "version": "0.9.4"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "api_server"
+  }
+}

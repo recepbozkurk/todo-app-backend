@@ -1,0 +1,25 @@
+{
+  "name": "todo-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "jest": "jest --watchAll",
+    "test": "start-server-and-test start http://localhost:3000 jest"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "^1.8.1",
+    "mongoose": "^5.11.15",
+    "morgan": "~1.9.1",
+    "start-server-and-test": "^1.7.5"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^10.0.0-beta.44",
+    "jest": "^27.4.3",
+    "supertest": "^6.1.6"
+  }
+}
