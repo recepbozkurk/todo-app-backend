@@ -34,8 +34,8 @@ komutu çalıştırılması yeterlidir.
 Proje frontend ve backend kısımları için Github repoları eşleştirilerek ayrı ayrı Heroku üzerinde deploy edilmiştir.
 
 ###### Uygulamanın güncel versiyonlarının direkt erişim linklerine aşağıdan ulaşabilirsiniz.
-FRONTEND: eklenecek...
-BACKEND: eklenecek...
+[FRONTEND](https://todo-app-frontend-rb.herokuapp.com/)
+[BACKEND](https://todo-app-backend-rb.herokuapp.com/)
 
 Github repoları güncellendiğinde Cloud Server(Heroku) build ve deploy aşamalarını yeni versiyon üzerinden çalıştıracak şekilde otomatize edilmiştir.
 
